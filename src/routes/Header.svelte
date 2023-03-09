@@ -34,9 +34,8 @@
 	</div>
 </header>
 
-<style>
+<style lang="postcss">
 	.wrapper {
-		font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		padding: 15px 20px;
 		display: flex;
@@ -50,20 +49,17 @@
 	}
 
 	h1 {
-		font-weight: 700;
-		font-size: 20px;
+		font-weight: theme(fontWeight.bold);
+		font-size: theme(fontSize.xl);
 		line-height: 1;
 		margin: 6px 0 6px 10px;
 		display: inline-block;
 		vertical-align: top;
 	}
 
-	button + button {
-		margin-left: 10px;
-	}
 	.welcome {
-		color: #333;
-		font-size: 14px;
+		color: theme(colors.stone.600);
+		font-size: theme(fontSize.sm);
 		margin-right: 10px;
 	}
 </style>

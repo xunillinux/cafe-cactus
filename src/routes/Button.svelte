@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let primary = false;
 	export let size: 'small' | 'medium' | 'large' = 'medium';
-	export let label: string = '';
+	export let label = '';
 
 	$: mode = primary ? 'cactus-button--primary' : 'cactus-button--secondary';
 </script>
