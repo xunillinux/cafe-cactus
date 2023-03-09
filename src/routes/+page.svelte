@@ -1,11 +1,11 @@
 <svelte:head>
-	<title>Coffee Cactus</title>
-	<meta name="description" content="Coffee Cactus" />
+	<title>Cafe Cactus</title>
+	<meta name="description" content="Cafe Cactus" />
 </svelte:head>
 
-<h1>Welcome to Coffee Cactus!</h1>
+<h1>Welcome to Cafe Cactus!</h1>
 <br>
-<p>This is a website about a (currently fictional) coffee with the name <bold>Coffee Cactus</bold>.</p>
+<p>This is a website about a (currently fictional) cafe with the name <bold>Cafe Cactus</bold>.</p>
 <br>
 <p>As you can probably guess, it's still a work in progress.</p>
 

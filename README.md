@@ -1,5 +1,5 @@
-# coffee-cactus
+# Cafe-Cactus
 
-## Svelte SPA for coffee cactus
+## Svelte SPA for Cafe Cactus
 
 w.i.p.
