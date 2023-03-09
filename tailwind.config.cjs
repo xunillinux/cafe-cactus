@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.emerald
+        primary: '#FAEDCD',
+        secondary: '#FAEDCD',
+        success: '#D4E09B',
+        warning: '#F19C79',
+        danger: '#A44A3F'
       },
     },
   },
