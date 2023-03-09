@@ -1,16 +1,16 @@
 <script>
-    import Header from './Header.svelte';
-    import "../app.css";
+	import Header from './Header.svelte';
+	import '../app.css';
 </script>
 
 <div class="app">
-    <Header />
+	<Header />
 
-    <main>
-        <slot />
-    </main>
+	<main>
+		<slot />
+	</main>
 
-    <footer>
-        <p>This is the footer.</p>
-    </footer>
+	<footer>
+		<p>This is the footer.</p>
+	</footer>
 </div>
