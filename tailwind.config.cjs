@@ -1,18 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 
-
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
-  darkMode: 'media', // or 'class'
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        primary: '#FAEDCD',
-        secondary: '#FAEDCD',
-        success: '#D4E09B',
-        warning: '#F19C79',
-        danger: '#A44A3F'
+        primary: '#CCD5AE',
+        secondary: '#FEFAE0',
+        success: '#E9EDC9',
+        warning: '#FAEDCD',
+        danger: '#D4A373'
       },
     },
   },
