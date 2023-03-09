@@ -5,7 +5,7 @@
     }
 </style>
 
-<h1>Welcome to Coffee Cacuts!</h1>
+<h1>Welcome to Coffee Cactus!</h1>
 <br>
 <p>This is a website about a (currently fictional) coffee with the name <bold>Coffee Cactus</bold>.</p>
 <br>
