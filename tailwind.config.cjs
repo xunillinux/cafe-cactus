@@ -7,7 +7,9 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: 'Nunito Sans, Helvetica Neue, Arial, sans-serif'
+				//sans: 'Nunito Sans, Helvetica Neue, Arial, sans-serif'
+				josefin: 'Josefin Sans, Helvetica Neue, Arial, sans-serif',
+				sacramento: 'Sacramento, Helvetica Neue, Arial, sans-serif'
 			},
 			colors: {
 				primary: '#CCD5AE',
