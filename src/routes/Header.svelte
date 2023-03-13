@@ -19,7 +19,7 @@
 	<div class="wrapper">
 		<div>
 			<img width="32" height="32" src={logo} alt="Cafe Cactus" />
-			<h1>Acme</h1>
+			<h1 class="font-sacramento">Cafe Cactus</h1>
 		</div>
 		<div>
 			{#if user}
