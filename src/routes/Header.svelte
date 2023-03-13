@@ -46,6 +46,7 @@
 	img {
 		display: inline-block;
 		vertical-align: top;
+		border-radius: theme(borderRadius.2xl);
 	}
 
 	h1 {
