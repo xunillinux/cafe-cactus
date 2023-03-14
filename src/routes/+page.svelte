@@ -8,9 +8,3 @@
 <p>This is a website about a (currently fictional) cafe with the name <bold>Cafe Cactus</bold>.</p>
 <br />
 <p>As you can probably guess, it's still a work in progress.</p>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>

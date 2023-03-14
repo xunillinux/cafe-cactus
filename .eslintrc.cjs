@@ -15,6 +15,9 @@ module.exports = {
 			processor: 'svelte3/svelte3'
 		}
 	],
+	rules: {
+		'@typescript-eslint/no-explicit-any': false
+	},
 	settings: {
 		'svelte3/typescript': () => require('typescript')
 	},
