@@ -1,11 +1,17 @@
 {
-	"header": {},
-	"home": {
-		"welcome": {
-			"title": "Willkommen im Cafe Kaktus!",
-			"p1": "asdf",
-			"p2": "asdf"
-		}
-	},
-	"footer": {}
+  "header": {},
+  "home": {
+    "welcome": {
+      "title": "Willkommen im Cafe Kaktus!",
+      "p1": "asdf",
+      "p2": "asdf"
+    }
+  },
+  "footer": {},
+  "title": "Cafe Kaktus",
+  "copyright": "2023 Coffee Kaktus",
+  "locale": {
+    "english": "Englisch",
+    "german": "Deutsch"
+  }
 }

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Cafe Cactus</title>
+	<title>{$_('title')}</title>
 	<meta name="description" content="Cafe Cactus" />
 </svelte:head>
 

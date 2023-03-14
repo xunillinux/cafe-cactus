@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { locale } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 
 	let value = 'en';
 
@@ -11,8 +11,8 @@
 <div class="flex, justify-center">
 	<div class="mr-4 mb-4">
 		<select {value} on:change|preventDefault={switchLocale}>
-			<option value="en">English</option>
-			<option value="de">German</option>
+			<option value="en">{$_('locale.english')}</option>
+			<option value="de">{$_('locale.german')}</option>
 		</select>
 	</div>
 </div>
