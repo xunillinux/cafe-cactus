@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
-import Button from '../routes/Button.svelte';
+import Button from '$lib/components/forms/Button.svelte';
 
 const meta = {
 	title: 'Cactus/Button',

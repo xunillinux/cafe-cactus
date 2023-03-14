@@ -1,6 +1,6 @@
 <script lang="ts">
 	import logo from '$lib/images/logo-cafe-cactus.png';
-	import LocaleSwitcher from './LocaleSwitcher.svelte';
+	import LocaleSwitcher from '$lib/i18n/LocaleSwitcher.svelte';
 	import { _ } from 'svelte-i18n';
 </script>
 

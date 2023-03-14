@@ -14,7 +14,7 @@
 	.cactus-button {
 		font-weight: theme(fontWeight.bold);
 		border: 0;
-		border-radius: theme(borderRadius.3xl);
+		border-radius: theme(borderRadius.md);
 		display: inline-block;
 		line-height: 1;
 	}

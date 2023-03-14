@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
-import Header from '../routes/Header.svelte';
+import Header from '$lib/components/core/Header.svelte';
 
 const meta = {
 	title: 'Cactus/Header',

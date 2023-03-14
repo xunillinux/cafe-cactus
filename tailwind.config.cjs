@@ -12,11 +12,11 @@ module.exports = {
 				sacramento: 'Sacramento, Helvetica Neue, Arial, sans-serif'
 			},
 			colors: {
-				primary: '#CCD5AE',
-				secondary: '#FEFAE0',
-				success: '#E9EDC9',
-				warning: '#FAEDCD',
-				danger: '#D4A373'
+				primary: '#CBDFBD',
+				secondary: '#F6F4D2',
+				success: '#D4E09B',
+				warning: '#F19C79',
+				danger: '#A44A3F'
 			}
 		}
 	},
