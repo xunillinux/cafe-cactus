@@ -3,8 +3,8 @@
   "home": {
     "welcome": {
       "title": "Willkommen im Cafe Kaktus!",
-      "p1": "asdf",
-      "p2": "asdf"
+      "p1": "Dies ist eine Website über ein (derzeit fiktives) Cafe mit dem Namen",
+      "p2": "Wie Sie sich wahrscheinlich denken können, ist das Projekt noch nicht abgeschlossen."
     }
   },
   "footer": {},

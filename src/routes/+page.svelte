@@ -9,6 +9,6 @@
 
 <h1>{$_('home.welcome.title')}</h1>
 <br />
-<p>This is a website about a (currently fictional) cafe with the name <bold>Cafe Cactus</bold>.</p>
+<p>{$_('home.welcome.p1')} <bold>{$_('title')}</bold>.</p>
 <br />
-<p>As you can probably guess, it's still a work in progress.</p>
+<p>{$_('home.welcome.p2')}</p>

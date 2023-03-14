@@ -1,17 +1,17 @@
 {
-	"header": {},
-	"home": {
-		"welcome": {
-			"title": "Welcome to Cafe Cactus!",
-			"p1": "asdf",
-			"p2": "asdf"
-		}
-	},
-	"footer": {},
-	"title": "Cafe Cactus",
-	"copyright": "2023 Coffee Cactus",
-	"locale": {
-		"english": "English",
-		"german": "German"
-	}
+  "header": {},
+  "home": {
+    "welcome": {
+      "title": "Welcome to Cafe Cactus!",
+      "p1": "This is a website about a (currently fictional) cafe with the name",
+      "p2": "As you can probably guess, it's still a work in progress."
+    }
+  },
+  "footer": {},
+  "title": "Cafe Cactus",
+  "copyright": "2023 Coffee Cactus",
+  "locale": {
+    "english": "English",
+    "german": "German"
+  }
 }
