@@ -8,5 +8,7 @@
 	"editor.formatOnSave": true,
 	"editor.formatOnSaveMode": "file",
 	"files.autoSave": "onFocusChange",
-	"eslint.validate": ["javascript", "typescript", "html", "svelte"]
+	"eslint.validate": ["javascript", "typescript", "html", "svelte"],
+	"i18n-ally.localesPaths": ["src/lib/i18n/locales"],
+	"i18n-ally.enabledFrameworks": ["svelte"]
 }

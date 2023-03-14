@@ -3,6 +3,8 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"svelte.svelte-vscode",
-		"bradlc.vscode-tailwindcss"
+		"bradlc.vscode-tailwindcss",
+		"lokalise.i18n-ally",
+		"ms-playwright.playwright"
 	]
 }
