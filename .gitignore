@@ -28,4 +28,4 @@ storybook-static/
 .ionide
 
 ### Netlify ###
-.netlify
+.netlify/*
