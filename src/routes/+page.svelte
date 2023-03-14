@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>{$_('title')}</title>
-	<meta name="description" content="Cafe Cactus" />
+	<meta name="description" content="Home" />
 </svelte:head>
 
 <h1>{$_('home.welcome.title')}</h1>

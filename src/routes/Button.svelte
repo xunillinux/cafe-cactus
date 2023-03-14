@@ -6,7 +6,7 @@
 	$: mode = primary ? 'cactus-button--primary' : 'cactus-button--secondary';
 </script>
 
-<button type="button" class={`cactus-button cactus-button--${size} ${mode}`} on:click>
+<button type="button" class={['cactus-button', `cactus-button--${size}`, mode].join(' ')} on:click>
 	{label}
 </button>
 
