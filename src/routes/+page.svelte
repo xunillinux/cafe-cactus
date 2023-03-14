@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { LL } from '$lib/i18n/i18n-svelte';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -7,7 +7,7 @@
 	<meta name="description" content="Cafe Cactus" />
 </svelte:head>
 
-<h1>{$LL.WelcomeTitle()} test</h1>
+<h1>{$_('home.welcome.title')}</h1>
 <br />
 <p>This is a website about a (currently fictional) cafe with the name <bold>Cafe Cactus</bold>.</p>
 <br />
