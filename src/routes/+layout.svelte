@@ -1,7 +1,8 @@
 <script lang="ts">
+	import '../app.css';
+
 	import Header from '$lib/components/core/Header.svelte';
 	import Footer from '$lib/components/core/Footer.svelte';
-	import '../app.css';
 </script>
 
 <div class="app flex flex-col min-h-screen">
