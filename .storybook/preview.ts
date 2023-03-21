@@ -1,4 +1,6 @@
 import type { Preview } from '@storybook/svelte';
+import Wrapper from './Wrapper.svelte';
+import '../src/app.css';
 
 const preview: Preview = {
 	parameters: {
@@ -16,3 +18,5 @@ const preview: Preview = {
 };
 
 export default preview;
+
+export const decorators = [() => Wrapper];
