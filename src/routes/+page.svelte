@@ -10,6 +10,8 @@
 	import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 	import Where from './sections/where.svelte';
 	import Menu from './sections/menu.svelte';
+	import About from './sections/about.svelte';
+	import Contact from './sections/contact.svelte';
 
 	let { data } = $props();
 
@@ -47,12 +49,20 @@
 		<HomeImage {headerImage} />
 	</section>
 
-	<section id="menu" class="menu-section">
+	<section id="menu" class="menu-section relative">
 		<Menu />
 	</section>
 
-	<section id="location" class="location-section">
+	<section id="about" class="about-section relative">
+		<About />
+	</section>
+
+	<section id="location" class="location-section relative">
 		<Where />
+	</section>
+
+	<section id="contact" class="contact-section relative">
+		<Contact />
 	</section>
 
 </main>

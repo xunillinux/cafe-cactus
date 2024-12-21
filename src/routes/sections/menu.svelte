@@ -38,7 +38,7 @@
 	];
 </script>
 
-<div class="bg-white px-4 pt-12 pb-6 text-black">
+<div class="bg-white px-4 py-12 text-black">
 	<div class="max-w-4xl mx-auto">
 		<h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
 		<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">

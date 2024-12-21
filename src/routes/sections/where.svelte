@@ -6,7 +6,7 @@
 	const googleMapsUrl = `https://www.google.com/maps/embed/v1/view?key=${PUBLIC_MAPS_API_KEY}&center=${latitude},${longitude}&zoom=2`;
 </script>
 
-<div class="bg-white pt-6 pb-12 text-black">
+<div class="bg-white py-12 text-black">
 	<div class="flex flex-col items-center space-y-6">
 		<h2 class="text-2xl font-bold pt-4">Find Us Here</h2>
 		<div class="w-full max-w-4xl aspect-video">
