@@ -9,7 +9,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				separat: ['Separat', ...defaultTheme.fontFamily.sans],
+				separat: ['AmaticSC', ...defaultTheme.fontFamily.sans],
 			  },
 			  maxWidth: {
 				'72': '18rem',
