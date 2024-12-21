@@ -9,6 +9,7 @@
 	import Fa from 'svelte-fa';
 	import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 	import Where from './sections/where.svelte';
+	import Menu from './sections/menu.svelte';
 
 	let { data } = $props();
 
@@ -46,7 +47,11 @@
 		<HomeImage {headerImage} />
 	</section>
 
-	<section id="location" class="location-section relative">
+	<section id="menu" class="menu-section">
+		<Menu />
+	</section>
+
+	<section id="location" class="location-section">
 		<Where />
 	</section>
 
