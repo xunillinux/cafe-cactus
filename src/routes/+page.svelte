@@ -52,7 +52,7 @@ Hello World
 		onclick={logout}
 		aria-label="Logout"
 	>
-		<Fa icon={faSignOutAlt} class="mr-2" />
+		TODO ICON <!--<Fa icon={faSignOutAlt} class="mr-2" />-->
 		Logout
 	</button>
 {/if}
