@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import Fa from 'svelte-fa';
+	import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 	let isMenuOpen = $state(false);
 
@@ -35,18 +37,18 @@
 			<!-- Desktop Navigation -->
 			<div class="hidden space-x-6 text-xl sm:flex">
 				<a
-					href="#listen"
+					href="#menu"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
 						scrollToSection(event, '#feature');
-					}}>Listen</a
+					}}>Menu</a
 				>
 				<a
-					href="#see"
+					href="#location"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
 						scrollToSection(event, '#concerts');
-					}}>See</a
+					}}>Location</a
 				>
 				<a
 					href="#about"
@@ -66,7 +68,7 @@
 
 			<!-- Mobile Burger Icon -->
 			<button class="text-gray-800 focus:outline-none sm:hidden" onclick={toggleMenu}>
-				TODO menu icon <!--<Fa icon={faBars} scale={1.5} />-->
+				<Fa icon={faBars} scale={1.5} />
 			</button>
 		</div>
 
@@ -79,14 +81,14 @@
 			>
 				<!-- Close Button -->
 				<button class="absolute right-6 top-6 text-gray-800 focus:outline-none" onclick={toggleMenu}>
-					TODO icon <!--<Fa icon={faTimes} scale={1.5} />-->
+					<Fa icon={faTimes} scale={1.5} />
 				</button>
 
 				<!-- Centered Links -->
 				<div class="flex flex-grow flex-col items-center justify-center space-y-6">
-					<a href="#listen" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#feature')}>Listen</a
+					<a href="#menu" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#feature')}>Menu</a
 					>
-					<a href="#see" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#concerts')}>See</a>
+					<a href="#location" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#concerts')}>Location</a>
 					<a href="#about" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#presstexts')}
 						>About</a
 					>

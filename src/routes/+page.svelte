@@ -6,6 +6,8 @@
 	import Header from './sections/header.svelte';
 	import type { CafeCactusData, HeaderImage } from '$lib/model/cafe-cactus-data-model';
 	import HomeImage from './sections/home-image.svelte';
+	import Fa from 'svelte-fa';
+	import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 	let { data } = $props();
 
@@ -53,7 +55,7 @@
 		onclick={logout}
 		aria-label="Logout"
 	>
-		TODO ICON <!--<Fa icon={faSignOutAlt} class="mr-2" />-->
+		<Fa icon={faSignOutAlt} class="mr-2" />
 		Logout
 	</button>
 {/if}

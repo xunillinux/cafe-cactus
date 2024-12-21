@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { auth, userData } from '$lib/firebase';
+	import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 	import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
+	import Fa from 'svelte-fa';
 
 	let email = $state('');
 	let password = $state('');
@@ -51,7 +53,7 @@
 		{#if $userData.isLoading || isRedirecting}
 			<!-- Loading Spinner -->
 			<div class="flex items-center justify-center">
-				TODO use spinner icon <!--<Fa icon={faCircleNotch} class="animate-spin text-black" size="2x" />-->
+				<Fa icon={faCircleNotch} class="animate-spin text-black" size="2x" />
 			</div>
 		{:else if $userData.user}
 			<!-- Logged-in User Section -->
