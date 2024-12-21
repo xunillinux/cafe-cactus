@@ -40,28 +40,28 @@
 					href="#menu"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
-						scrollToSection(event, '#feature');
+						scrollToSection(event, '#menu');
 					}}>Menu</a
 				>
 				<a
 					href="#location"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
-						scrollToSection(event, '#concerts');
+						scrollToSection(event, '#location');
 					}}>Location</a
 				>
 				<a
 					href="#about"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
-						scrollToSection(event, '#presstexts');
+						scrollToSection(event, '#about');
 					}}>About</a
 				>
 				<a
 					href="#contact"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
-						scrollToSection(event, '#links');
+						scrollToSection(event, '#contact');
 					}}>Contact</a
 				>
 			</div>
@@ -86,13 +86,13 @@
 
 				<!-- Centered Links -->
 				<div class="flex flex-grow flex-col items-center justify-center space-y-6">
-					<a href="#menu" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#feature')}>Menu</a
+					<a href="#menu" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#menu')}>Menu</a
 					>
-					<a href="#location" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#concerts')}>Location</a>
-					<a href="#about" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#presstexts')}
+					<a href="#location" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#location')}>Location</a>
+					<a href="#about" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#about')}
 						>About</a
 					>
-					<a href="#contact" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#links')}>Contact</a
+					<a href="#contact" class="text-2xl uppercase text-gray-800 hover:underline" onclick={(event) => scrollToSection(event, '#contact')}>Contact</a
 					>
 				</div>
 			</div>

@@ -8,6 +8,7 @@
 	import HomeImage from './sections/home-image.svelte';
 	import Fa from 'svelte-fa';
 	import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+	import Where from './sections/where.svelte';
 
 	let { data } = $props();
 
@@ -41,8 +42,12 @@
 
 <main id="top" class="w-100">
 	
-	<section id="carousel" class="carousel-section relative">
+	<section id="homeImage" class="homeImage-section relative">
 		<HomeImage {headerImage} />
+	</section>
+
+	<section id="location" class="location-section relative">
+		<Where />
 	</section>
 
 </main>
