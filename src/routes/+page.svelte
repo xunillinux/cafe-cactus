@@ -5,6 +5,7 @@
 	import Footer from './sections/footer.svelte';
 	import Header from './sections/header.svelte';
 	import type { CafeCactusData, HeaderImage } from '$lib/model/cafe-cactus-data-model';
+	import HomeImage from './sections/home-image.svelte';
 
 	let { data } = $props();
 
@@ -38,9 +39,9 @@
 
 <main id="top" class="w-100">
 	
-
-Hello World
-
+	<section id="carousel" class="carousel-section relative">
+		<HomeImage {headerImage} />
+	</section>
 
 </main>
 
