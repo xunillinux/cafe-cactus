@@ -3,6 +3,7 @@
 	import { quintOut } from 'svelte/easing';
 	import Fa from 'svelte-fa';
 	import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+	import { goto } from '$app/navigation';
 
 	let isMenuOpen = $state(false);
 
@@ -12,10 +13,40 @@
 
 	function scrollToSection(event: any, id: string) {
 		event.preventDefault();
-		const section = document.querySelector(id);
-		if (section) {
-			section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+		// If the current route is not "/", navigate to "/".
+		if (window.location.pathname !== '/') {
+			goto('/').then(() => {
+				// Scroll after route change.
+				scrollToTarget(id);
+			});
+		} else {
+			scrollToTarget(id);
 		}
+
+		isMenuOpen = false;
+	}
+
+	function scrollToTarget(id: string) {
+		const section = document.querySelector(id);
+		const header = document.querySelector('header'); // Get the header element
+
+		if (section) {
+			const headerHeight = header ? header.offsetHeight : 0;
+
+			// Get the section's position relative to the document
+			const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+
+			// Scroll to the section minus the header height
+			window.scrollTo({
+				top: sectionTop - headerHeight,
+				behavior: 'smooth', // Smooth scroll directly to the correct position
+			});
+		}
+	}
+
+	function goToNews() {
+		goto('/news');
 		isMenuOpen = false;
 	}
 </script>
@@ -44,13 +75,6 @@
 					}}>Menu</a
 				>
 				<a
-					href="#location"
-					class="uppercase text-gray-800 hover:underline"
-					onclick={(event) => {
-						scrollToSection(event, '#location');
-					}}>Location</a
-				>
-				<a
 					href="#about"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
@@ -58,11 +82,26 @@
 					}}>About</a
 				>
 				<a
+					href="#location"
+					class="uppercase text-gray-800 hover:underline"
+					onclick={(event) => {
+						scrollToSection(event, '#location');
+					}}>Location</a
+				>
+				<a
 					href="#contact"
 					class="uppercase text-gray-800 hover:underline"
 					onclick={(event) => {
 						scrollToSection(event, '#contact');
 					}}>Contact</a
+				>
+				<a
+					href="/news"
+					class="uppercase text-gray-800 hover:underline"
+					onclick={(event) => {
+						event.preventDefault();
+						goToNews();
+					}}>News</a
 				>
 			</div>
 

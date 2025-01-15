@@ -1,11 +1,21 @@
 <script lang="ts">
 	import { r2bucketEndpoint } from '$lib/config';
 	import type { HeaderImage } from '$lib/model/cafe-cactus-data-model';
+	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 
 	let { headerImage }: { headerImage: HeaderImage } = $props();
 
-	let sectionHeight = $state('100vh');
+	let headerHeight = $state(0);
+
+	onMount(() => {
+		const header = document.querySelector('header');
+
+		if (header) {
+			headerHeight = header.offsetHeight;
+		}
+	});
+
 </script>
 
 <svg class="absolute inset-0 h-0 w-0">
@@ -18,7 +28,7 @@
 	</filter>
 </svg>
 
-<div class="relative w-full overflow-hidden" style="height: {sectionHeight};">
+<div class="relative w-full overflow-hidden" style="height: calc(100vh - {headerHeight}px);">
 	<!-- Render Current Slide -->
     <img src={r2bucketEndpoint + headerImage.src} alt="Header" class="absolute inset-0 h-full w-full object-cover" transition:fade={{ duration: 500 }} />
 
